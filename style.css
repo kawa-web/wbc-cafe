@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #432;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ヘッダー */
+.wrapper {
+  height: 100vh;
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-list {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.header-list li {
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+.header-list a {
+  color: #432;
+}
+
+.main {
+  text-align: center;
+  margin-top: 170px;
+}
+
+.main h2 {
+  font-size: 78px;
+  font-family: "Philosopher", serif;
+  font-weight: normal;
+}
+
+.main p {
+  margin-top: 35px;
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+
+.main a {
+  background-color: #0bd;
+  border-radius: 4px;
+  padding: 18px 40px;
+  color: #fff;
+  font-size: 22px;
+}
+
+
+/* ニュース-ヘッダー
+------------------------- */
+
+.wrapper#news {
+  background-image: url(../img/news-bg.jpg);
+  height: 270px;
+}
+
+#news .main {
+  margin-top: 20px;
+}
+
+/* ニュース-記事部分
+------------------------- */
+
+.news-container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+article {
+  width: 58%;
+  order: 2;
+}
+
+.post-header {
+  margin-bottom: 50px;
+  position: relative;
+
+}
+
+.post-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #0bd;
+  color: #fff;
+  font-size: 25px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 45px;
+  padding: 7px 0;
+}
+
+span {
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  display: block;
+  font-size: 17px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+.title-sec {
+  margin-left: 110px;
+  padding: 5px 0 5px 5px;
+}
+
+.post-title {
+  font-size: 30px;
+  font-weight: normal;
+  font-family: "Philosopher", serif;
+}
+
+article section.post-sec {
+  padding: 4px;
+}
+
+article section p {
+  margin-top: 20px;
+}
+
+aside {
+  width: 24%;
+  order: 3;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+aside h3 {
+  font-size: 25px;
+  font-weight: normal;
+  border-bottom: 2px solid #0bd;
+  padding: 7px 0 7px 5px;
+}
+
+aside a {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 10px 5px;
+  color: #432;
+}
+
+.about p {
+  padding: 8px;
+}
+
+.ad {
+  order: 1;
+  width: 13%;
+}
+
+/* フッター
+------------------------- */
+
+footer {
+  height: 65px;
+  background-color: #432;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  line-height: 65px;
+  font-size: 12px;
+}
